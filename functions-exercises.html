@@ -2,11 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Function exercises</title>
+    <title>Functions exercises</title>
 </head>
 <body>
     <script>
-    console.log("Hello, World!")
+    function add7 (firstNumber) {
+        return firstNumber +7 ;
+    }
+    function multiply (firstNumber, secondNumber) {
+        return firstNumber * secondNumber;
+    }
+    function capitalise (inputString) {
+        let firstInitial = inputString.slice(0, 1).toUpperCase();
+        let remainingString = inputString.slice(1).toLowerCase();
+        return firstInitial + remainingString;
+    }
+    function lastLetter (inputString) {
+        return inputString.slice(-1);
+    }
+    let lastLetterv2 = (inputString) => inputString.slice(-1);
+    console.log("Exercise 1: " + add7(10));
+    console.log("Exercise 2: " + multiply(16, 3));
+    console.log("Exercise 3: " + capitalise("hi My nAMe is AARoN!"));
+    console.log("Exercise 4: " + lastLetter("abcd")); 
+    console.log("Exercise 4v2 " + lastLetterv2("abcd")); 
     </script>
 </body>
 </html>
